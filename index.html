@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubFlow | Stop the Paperwork. Start Winning.</title>
+    <!-- Load Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1832095');
+    </script>
+    <!-- End MailerLite Universal -->
+    <style>
+        /* Apply Inter font family and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Custom style for the Hero section background effect */
+        .hero-background {
+            background-color: #1a202c; /* Dark base color */
+            background-image: url('https://placehold.co/1920x1080/0d398d/ffffff/png?text=Dynamic+Sports+Action');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Overlay to make text readable */
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(17, 24, 39, 0.75); /* Dark blue overlay */
+            backdrop-filter: blur(2px);
+        }
+
+        /* Ensure content is above the overlay */
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Utility for smooth button transitions */
+        .btn-primary, .btn-secondary {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3), 0 4px 6px -4px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navigation (Simple) -->
+    <header class="bg-white shadow-sm sticky top-0 z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-extrabold text-indigo-600 tracking-tight">
+                ClubFlow
+            </div>
+            <!-- Simple Nav Links -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#features" class="hover:text-indigo-600 transition duration-150">Features</a>
+                <a href="#pricing" class="text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-150">Sign Up</a>
+            </nav>
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden text-gray-600 p-2 rounded-lg hover:bg-gray-100">
+                <!-- SVG Menu Icon (Menu) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-background min-h-[70vh] flex items-center justify-center text-center py-20">
+        <div class="hero-content max-w-4xl mx-auto px-4">
+            <!-- Super Headline -->
+            <p class="text-indigo-300 uppercase tracking-widest text-sm font-semibold mb-3">For Coaches. For Teams. For Victory.</p>
+            
+            <!-- Main Headline -->
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                Stop the Paperwork. <span class="text-indigo-400">Start Winning.</span>
+            </h1>
+            
+            <!-- Sub-Headline -->
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+                The only club management system that *automatically* handles member imports, payments, and match schedules.
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#mailerlite-capture" class="btn-primary bg-indigo-600 text-white font-bold py-3 px-8 rounded-xl text-lg hover:bg-indigo-700">
+                    Start Your Free Trial
+                </a>
+                <a href="#features" class="btn-secondary bg-transparent border-2 border-indigo-400 text-indigo-200 font-bold py-3 px-8 rounded-xl text-lg hover:bg-indigo-700 hover:border-indigo-700 hover:text-white">
+                    See Key Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Value Proposition (Icon-Driven) -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-12">Built for Teams, Loved by Admins.</h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <!-- Benefit Card 1: Member Management -->
+                <div class="bg-gray-100 p-8 rounded-2xl shadow-lg transform transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                    <div class="flex justify-center mb-4">
+                        <!-- Icon: Users -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-600">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Effortless Member Management</h3>
+                    <p class="text-gray-600">Easily import existing member lists (Excel, CSV) in minutes. Automate membership renewals and track all payments in one clean, secure place. *No more manual chasing.*</p>
+                </div>
+
+                <!-- Benefit Card 2: Schedule Automation -->
+                <div class="bg-gray-100 p-8 rounded-2xl shadow-lg transform transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                    <div class="flex justify-center mb-4">
+                        <!-- Icon: CalendarClock -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-600">
+                            <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5.5"/><path d="M17.864 12.136a4 4 0 1 0 4.136 4.136"/><path d="M22 12v4h-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Automated Schedule & Match Import</h3>
+                    <p class="text-gray-600">Our proprietary script automatically pulls in your team's fixture list and results from league systems, updating team calendars and notifying members instantly. *Zero data entry.*</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. MailerLite Lead Capture Section (CRITICAL & DYNAMIC) -->
+    <section id="mailerlite-capture" class="py-20 bg-indigo-600">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Dynamic Headline (ID required for dynamic text swap) -->
+            <h2 id="cta-headline" class="text-4xl sm:text-5xl font-extrabold text-white mb-4">
+                Secure Your 50% Founders' Lifetime Discount.
+            </h2>
+            
+            <!-- Dynamic Body (ID required for dynamic text swap) -->
+            <p id="cta-body" class="text-xl text-indigo-200 mb-8">
+                We're accepting **only 5 founding members** who get 50% off *for life*! Don't miss this opportunity to revolutionize your club for half the price.
+            </p>
+
+            <!-- 
+            =====================================================================================================
+            !!! MAIL-ER-LITE EMBED AREA !!!
+            
+            NOTE: We are using a manually created placeholder form that includes the necessary ID 
+            (cta-button) for the JavaScript to change the button text based on the offer status. 
+            If you want to use the official MailerLite embedded form, you will need to add the 
+            dynamic logic (from the script below) directly to your MailerLite form button's ID 
+            or surrounding text after you embed it here.
+            =====================================================================================================
+            -->
+
+            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl">
+                <!-- Placeholder Form Structure - The button text will be changed by the script below -->
+                <form action="#" method="POST" class="space-y-4">
+                    <input type="email" placeholder="Enter your best club manager email..." required 
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-gray-700 placeholder-gray-500">
+                    <button id="cta-button" type="submit" 
+                            class="w-full btn-primary bg-indigo-600 text-white font-bold py-3 rounded-xl text-lg hover:bg-indigo-700">
+                        Get Started & Save 50%
+                    </button>
+                    <p class="text-sm text-gray-500 pt-2">We respect your privacy. No spam, ever.</p>
+                </form>
+            </div>
+            
+            <!-- !!! END OF MAIL-ER-LITE EMBED AREA !!! -->
+
+        </div>
+    </section>
+
+    <!-- 4. Footer -->
+    <footer class="bg-gray-900 py-16 text-center text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8">
+                <h3 class="text-3xl font-extrabold text-white mb-2">Dedicated to the volunteers who make it happen.</h3>
+                <p class="text-indigo-300 text-lg">More time for coaching, less time for paperwork.</p>
+            </div>
+
+            <!-- Final CTA Button - Only Pricing remains -->
+            <div class="flex justify-center mb-10">
+                <a href="#" id="pricing" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-xl text-lg hover:bg-white hover:text-gray-900 transition duration-300">
+                    See Pricing & Plans
+                </a>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-sm text-gray-400">
+                <p>&copy; 2025 ClubFlow. All rights reserved.</p>
+                <div class="space-x-4 mt-2">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DYNAMIC OFFER CHECK SCRIPT -->
+    <script>
+        // =====================================================================
+        // !!! IMPORTANT: PASTE YOUR GITHUB GIST 'RAW' URL HERE !!!
+        // Example: https://gist.githubusercontent.com/username/gistid/raw/status.json
+        // =====================================================================
+        // Your Gist URL is now active and will be used for fetching the offer status.
+        const offerStatusUrl = 'https://gist.githubusercontent.com/AdrianYaleDev/9c68da599f9a1a1d084b2ee6e7053ab8/raw/offer_status.json'; 
+
+        window.addEventListener('DOMContentLoaded', () => {
+            // NOTE: The previous check that prevented the fetch call has been removed.
+            
+            fetch(offerStatusUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+					console.log(data);
+                    // Check the 'offerActive' key from the Gist JSON
+                    if (data.offerActive === false) {
+                        // Offer is over, switch to 25% discount messaging
+                        const headline = document.getElementById('cta-headline');
+                        const body = document.getElementById('cta-body');
+                        const button = document.getElementById('cta-button');
+
+                        if (headline) {
+                             headline.textContent = 'Missed the Founders\' Discount? Get the Next Best Thing.';
+                        }
+                        
+                        if (body) {
+                             // Use innerHTML to allow for strong tag formatting
+                             body.innerHTML = 'Our 50% lifetime offer for founding members is now full! Join our official launch list now and get a <strong>guaranteed 25% off your first year.</strong> This offer is exclusively for our mailing list subscribers.';
+                        }
+                        
+                        if (button) {
+                             button.textContent = 'Get My 25% Off Code';
+                        }
+                        
+                        console.log('✅ Offer status updated: Switched to 25% Discount Hook.');
+                    } else {
+                        // Offer is still active, default 50% text remains.
+                        console.log('✅ Offer status updated: 50% Founders\' Discount is still Active.');
+                    }
+                })
+                .catch(error => {
+                    // If the check fails (e.g., Gist down, network error), the default 50% offer text remains active.
+                    console.error('❌ Could not check offer status from Gist (retaining default 50% offer):', error);
+                });
+        });
+    </script>
+</body>
+</html>
